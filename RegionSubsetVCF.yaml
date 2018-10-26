@@ -1,0 +1,43 @@
+name: RegionSubsetVCF
+description: Run bcftools to extract an individual regions from a vcf based on a genomic range
+inputParameters:
+- name: INPUTVCF
+  localCopy:
+    disk: datadisk
+    path: input.vcf.gz
+- name: INPUTVCFINDEX
+  localCopy:
+    disk: datadisk
+    path: input.vcf.gz.tbi
+- name: CHROMOSOME
+  defaultValue: " "
+- name: STARTBP
+  defaultValue: " "
+- name: STOPBP
+  defaultValue: " "
+outputParameters:
+- name: OUTVCF
+  localCopy:
+    disk: datadisk
+    path: output.vcf.gz
+- name: OUTVCFINDEX
+  localCopy:
+    disk: datadisk
+    path: output.vcf.gz.tbi
+resources:
+  minimumCpuCores: 1
+  minimumRamGb: 3
+  preemptible: true
+  zones:
+  - us-central1-a
+  - us-central1-b
+  - us-central1-c
+  - us-central1-f
+  disks:
+  - name: datadisk
+    type: PERSISTENT_HDD
+    sizeGb: 200
+    mountPoint: /mnt/data
+docker:
+  imageName: "us.gcr.io/nih-nia-lng-cbg/shardvcfset:2018-1"
+  cmd: "cd /mnt/data; pwd; set -eu; bcftools view --threads $(nproc) --regions ${CHROMOSOME}:${STARTBP}-${STOPBP} --output-file ${OUTVCF} --output-type z ${INPUTVCF}; tabix -p vcf ${OUTVCF}; ls -lh"
