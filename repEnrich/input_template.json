@@ -1,0 +1,38 @@
+{
+	"RepEnrichWorkflow.sample_name": "",
+	"RepEnrichWorkflow.setup_zip": "",
+	"RepEnrichWorkflow.firstPairedEnd": "",
+	"RepEnrichWorkflow.secondPairedEnd": "",
+	"RepEnrichWorkflow.refgenomeFile": [""
+		
+		],
+	"RepEnrichWorkflow.BowtieMap.disk_size": 500,
+	"RepEnrichWorkflow.BowtieMap.mem_size": "30 GB",
+	"RepEnrichWorkflow.BowtieMap.preemptible_tries": 5,
+	"RepEnrichWorkflow.BowtieMap.output_name": "bowtie_sam_output",
+	"RepEnrichWorkflow.BowtieMap.dockerimg": ,
+	
+	
+	"RepEnrichWorkflow.SamToBam.disk_size": 500,
+	"RepEnrichWorkflow.SamToBam.mem_size": "30 GB",
+	"RepEnrichWorkflow.SamToBam.preemptible_tries": 5,
+	"RepEnrichWorkflow.SamToBam.output_name": "convert_bam_output",
+	"RepEnrichWorkflow.SamToBam.dockerimg": ,
+	
+	"RepEnrichWorkflow.RepEnrich2Subset.disk_size": 500,
+	"RepEnrichWorkflow.RepEnrich2Subset.mem_size": "30 GB",
+	"RepEnrichWorkflow.RepEnrich2Subset.preemptible_tries": 5,
+	"RepEnrichWorkflow.RepEnrich2Subset.python_script": "",
+	"RepEnrichWorkflow.RepEnrich2Subset.dockerimg": "",
+	
+	
+	
+
+	"RepEnrichWorkflow.RepEnrich2.disk_size": 500,
+	"RepEnrichWorkflow.RepEnrich2.mem_size": "208 GB",
+	"RepEnrichWorkflow.RepEnrich2.preemptible_tries": 5,
+	"RepEnrichWorkflow.RepEnrich2.dockerimg": "",
+	"RepEnrichWorkflow.RepEnrich2.python_script": "",
+	"RepEnrichWorkflow.RepEnrich2.annotation_text": "",
+	"RepEnrichWorkflow.RepEnrich2.output_dir": "RepEnrich2_Output"
+}
