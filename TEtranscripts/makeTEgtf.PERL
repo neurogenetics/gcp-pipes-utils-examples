@@ -1,5 +1,6 @@
 #!/bin/env perl
 
+# script written by Sean Shadle
 # This script takes annotations of transposable elements and converts it into a GTF file that is compatible with TEtranscripts.
 # The input file requires the following information in a tab-separated file: genomic location of TE (chrom, start, end, strand) and TE name (element/subfamily, e.g. L1HS).
 # For a clearer annotation in TEtranscripts results, we recommend also providing the TE family (e.g. L1) and class (e.g. LINE) information in the input file. Otherwise, the TE name would be used.
