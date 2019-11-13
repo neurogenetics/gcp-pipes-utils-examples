@@ -1,0 +1,17 @@
+{
+	"TEtranscriptsWorkflow.dockerimg": "us.gcr.io/projectid/tetranscripts-image@sha256:c29a278949aff6cb84504b0732b06f63d1a5bbb3a4179ba6b17319989326ab0e",
+	"TEtranscriptsWorkflow.sample_name": "sample",
+	"TEtranscriptsWorkflow.firstPairedEnd": "gs://somebucket/cohort/totalrna/fastqs/sample.fastq.gz",
+	"TEtranscriptsWorkflow.secondPairedEnd": "gs://somebucket/cohort/totalrna/fastqs/sample.fastq.gz",
+	"TEtranscriptsWorkflow.gene_annotation_gtf": "gs://somebucket/TEtranscriptsresources/hg38_gene_annotation.gtf",
+	"TEtranscriptsWorkflow.TE_annotation_gtf": "gs://somebucket/TEtranscriptsresources/hg38_dfam_annotation.gtf",
+	"TEtranscriptsWorkflow.refgenomeFile": "gs://somebucket/TEtranscriptsresources/ref.tar.gz",
+	
+	"TEtranscriptsWorkflow.STARMap.disk_size": 500,
+	"TEtranscriptsWorkflow.STARMap.mem_size": "60 GB",
+	"TEtranscriptsWorkflow.STARMap.preemptible_tries": 5,
+	
+	"TEtranscriptsWorkflow.TEcount.disk_size": 500,
+	"TEtranscriptsWorkflow.TEcount.mem_size": "208 GB",
+	"TEtranscriptsWorkflow.TEcount.preemptible_tries": 5
+}
