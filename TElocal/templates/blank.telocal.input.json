@@ -1,0 +1,11 @@
+{
+	"TElocalWorkflow.dockerimg": "us.gcr.io/pd-genome/telocal-image@sha256:6a4ede078b704d1f361eb471f14a9f2bc12811c08718887069f188d47795ed27",
+	"TElocalWorkflow.sample_name": "sample",
+	"TElocalWorkflow.sample_bam_file": "sample.bam",
+	
+	"TElocalWorkflow.TElocal.disk_size": 500,
+	"TElocalWorkflow.TElocal.cpus": "64",
+	"TElocalWorkflow.TElocal.mem_size": "416 GB",
+	"TElocalWorkflow.TElocal.preemptible_tries": 5,
+	"TElocalWorkflow.TElocal.stranded": "no"
+}
