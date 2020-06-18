@@ -1,0 +1,28 @@
+March 01, 2018.
+
+1- Pulled:
+  https://github.com/gatk-workflows/broad-prod-wgs-germline-snps-indels.git
+
+2- Copied:
+    PairedEndSingleSampleWf.hg38.inputs.json
+    PairedEndSingleSampleWf.options.json
+    PairedEndSingleSampleWf.wdl
+
+to:
+  workflows/PairedEndSingleSampleWf/
+
+3- From 
+    PairedEndSingleSampleWf.hg38.inputs.json
+
+Removed:
+  "##_COMMENT2": "SAMPLE NAME AND UNMAPPED BAMS - read the README to find other examples.",
+  "PairedEndSingleSampleWorkflow.sample_name": "NA12878",
+  "PairedEndSingleSampleWorkflow.base_file_name": "NA12878",
+  "PairedEndSingleSampleWorkflow.flowcell_unmapped_bams": ["gs://broad-public-datasets/NA12878_downsampled_for_testing/unmapped/H06HDADXX130110.1.ATCACGAT.20k_reads.bam",
+    "gs://broad-public-datasets/NA12878_downsampled_for_testing/unmapped/H06HDADXX130110.2.ATCACGAT.20k_reads.bam",
+    "gs://broad-public-datasets/NA12878_downsampled_for_testing/unmapped/H06JUADXX130110.1.ATCACGAT.20k_reads.bam"],
+  "PairedEndSingleSampleWorkflow.final_gvcf_base_name": "NA12878",
+  "PairedEndSingleSampleWorkflow.unmapped_bam_suffix": ".bam",
+
+4- The SAMPL"E NAME and UNMAPPED BAMS section is generated from the template
+  templates/PairedEndSingleSampleWf/PairedEndSingleSampleWf.inputs.json

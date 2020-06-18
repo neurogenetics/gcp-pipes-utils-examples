@@ -1,0 +1,10 @@
+{
+  "##_COMMENT2": "SAMPLE NAME AND UNMAPPED BAMS - read the README to find other examples.",
+  "PairedEndSingleSampleWorkflow.sample_name": "{{ sample_id }}",
+  "PairedEndSingleSampleWorkflow.base_file_name": "{{ sample_id }}",
+  "PairedEndSingleSampleWorkflow.flowcell_unmapped_bams": [
+{{ ubams }}
+  ],
+  "PairedEndSingleSampleWorkflow.final_gvcf_base_name": "{{ sample_id }}",
+  "PairedEndSingleSampleWorkflow.unmapped_bam_suffix": ".bam"
+}

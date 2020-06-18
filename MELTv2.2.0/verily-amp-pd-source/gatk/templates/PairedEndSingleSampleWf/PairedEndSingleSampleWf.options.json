@@ -1,0 +1,11 @@
+{
+  "read_from_cache":false,
+  "default_runtime_attributes": {
+    "zones": "us-central1-a us-central1-b us-central1-c us-central1-f",
+    "docker": "broadinstitute/genomes-in-the-cloud:2.3.1-1512499786"
+  },
+
+  "final_workflow_outputs_dir": "{{ output_root }}/{{ sample_id }}/outputs",
+  "final_workflow_log_dir": "{{ output_root }}/{{ sample_id }}/wf_logs",
+  "final_call_logs_dir": "{{ output_root }}/{{ sample_id }}/call_logs"
+}

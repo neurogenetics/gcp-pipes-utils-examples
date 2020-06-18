@@ -1,0 +1,29 @@
+{
+  "##_COMMENT1": "INPUTS",
+  "MELTSingleDelFlow.sample_name": "",
+  "MELTSingleDelFlow.input_cram": "",
+  "MELTSingleDelFlow.input_cram_crai": "",
+
+  "##_COMMENT2": "REFERENCES",
+  "MELTSingleDelFlow.ref_fasta": "",
+  "MELTSingleDelFlow.ref_fasta_index": "",
+  "MELTSingleDelFlow.ref_dict": "",
+  "MELTSingleDelFlow.region_bed": "",
+  "MELTSingleDelFlow.prior_files": "",
+
+  "##_COMMENT3": "DOCKER",
+  "MELTSingleDelFlow.meltv2_docker": "",
+
+  "##_COMMENT4": "DISK SIZE",
+  "MELTSingleDelFlow.CramToBamTask.addtional_disk_size": "100",
+  "MELTSingleDelFlow.MELTSingleTask.addtional_disk_size": "150",
+  "MELTSingleDelFlow.MELTDelTask.addtional_disk_size": "100",
+
+  "##_COMMENT5": "MEMORY", 
+  "MELTSingleDelFlow.CramToBamTask.machine_mem_size": "15",
+  "MELTSingleDelFlow.MELTSingleTask.machine_mem_size": "15",
+  "MELTSingleDelFlow.MELTDelTask.machine_mem_size": "7",
+
+  "##_COMMENT6": "PREEMPTIBLES",
+  "MELTSingleDelFlow.preemptible_tries": "3"
+}

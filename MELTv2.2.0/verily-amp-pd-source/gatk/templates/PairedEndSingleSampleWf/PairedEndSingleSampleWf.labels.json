@@ -1,0 +1,7 @@
+{
+  "workflow": "pairedendsinglesamplewf",
+  "batch": "{{ batch_id }}",
+  "run": "1",
+  "sample": "{{ sample_id }}"
+}
+

@@ -1,0 +1,13 @@
+{
+	"read_from_cache":true,
+	"write_to_cache":true,
+	"workflow_failure_mode" : "ContinueWhilePossible",
+	"system.input-read-limits.lines":640000,
+	"default_runtime_attributes": {
+		"zones": "us-central1-a us-central1-b us-central1-c us-central1-f"
+	},
+
+	"final_workflow_outputs_dir": "",
+	"final_workflow_log_dir": "",
+	"final_call_logs_dir": ""
+}
